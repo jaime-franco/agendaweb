@@ -1,0 +1,62 @@
+@charset "UTF-8";
+*{
+	margin:  0;
+	padding: 0;
+}
+html, body{
+	height: 100%;
+}
+/*Truco para poder tener 1em = 10px */
+body{
+	font-family: "Trebuchet MS", "Myriad Pro", Arial, sans-serif;
+	font-size :62.5%;
+	color:#333;
+	position: relative;
+}
+h1{
+	font-size : 2.5em;
+	padding: 0.5em 0em 0.5em 0.5em;
+	color:#aaa;
+}
+
+h2{
+	font-size: 2.5em;
+	padding: 0em 0em 0em 0em;
+	color:#aaa;
+}
+
+.header{
+	padding: 0em;
+	background-color:#444;
+	color:#fff;
+	height: 4em;
+	border-bottom:1px solid #ddd;
+}
+
+.logo{
+	background:url(Imagenes/agenda.gif);
+	background-size:4.5em 4.5em;
+	padding-left: 5.5em;
+	display: block;
+	background-repeat:no-repeat;
+	color:#FFF;
+}
+.nombreApp{
+	font-size: 3.5em;
+}
+
+.footer{
+	background-color:#444;
+	border-top:0.1em solid #ddd;
+	clear:both;
+	color:#fff;
+}
+
+.copyright 
+{   
+    font-size:0.7em; 
+    width: 100%;
+    text-align:center; 
+    display:block;
+    color:#FFF
+}

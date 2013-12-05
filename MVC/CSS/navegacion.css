@@ -1,0 +1,45 @@
+.nav ul {
+	list-style-type: none;
+}
+.nav ul li {
+	float :left;
+	position: relative;
+	width: 25%;
+}
+.nav ul li a{
+	display: block;
+	height: 2.1em;
+}
+.nav ul li a span{
+	text-align: left;
+	display: block;
+	font-size: 1.7em;
+}
+.eliminar{
+	background:url(Imagenes/eliminar.png);
+}
+.agregar{
+	background:url(Imagenes/agregar.png);
+}
+.modificar{
+	background:url(Imagenes/modificar.png);
+}
+.ver{
+	background:url(Imagenes/ver.png);
+}
+.eliminar , .agregar , .modificar, .ver{
+	color : #FFF;
+	background-size: 2em 2em;
+	margin-top: 0.1em;
+	padding-left: 2.15em;
+	display: block;
+	background-repeat: no-repeat;
+}
+.flotante{
+	height: 4.5em;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}

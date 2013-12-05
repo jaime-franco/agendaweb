@@ -1,0 +1,75 @@
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding:0.6em; 
+  border: 0.1em solid #ccc; 
+  text-align: left; 
+  word-wrap: break-word;
+  font-size: 1.4em; 
+}
+
+/* 
+Utilizado para poder determinar la menor resolucion que soporta
+La tabla antes de comenzar a ser visible.*/
+@media 
+only screen and (max-width: 600px),
+(min-device-width: 600px) and (max-device-width: 700px)  {
+
+	/* Forzar a los tags de la tabla a ya no comportarse como tablas */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Esconder los headers de las tablas (pero sin usar display: none;, por accesibilidad) */
+	.headers { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 0.1em solid #ccc; }
+	
+	td { 
+		/*para que se comporte como una columna */
+		border: none;
+		border-bottom: 0.1em solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* hoy se utiliza como los header de la tabla*/
+		position: absolute;
+		/* valores para Top y left para  padding */
+		top: 0.6em;
+		left: 0.6em;
+		width: 45%; 
+		
+		padding-right: 1em; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Labels de la informacion a mostrar cuando sea responsive
+	*/
+	td:nth-of-type(1):before { content: "Nombres"; }
+	td:nth-of-type(2):before { content: "Apellidos"; }
+	td:nth-of-type(3):before { content: "Direcciòn"; }
+	td:nth-of-type(4):before { content: "Telefono Trabajo"; }
+	td:nth-of-type(5):before { content: "Telefono Movil"; }
+	td:nth-of-type(6):before { content: "Email"; }
+}

@@ -1,0 +1,107 @@
+.formulario{
+	margin:0 auto;
+	width:100%;
+}
+
+.formulario .columna{
+	width: 85%;
+	/*Centrar la columna del formulario*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.formulario label{
+	display:block;
+	font-size: 2em;
+	padding:0.4em 0em 0em 1.4em;
+	margin:0.1em 0em 0em 0em;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario input[type="email"],
+.formulario select
+{
+	border: solid 1px #E5E5E5;
+	background: #FFFFFF;
+	margin: 0.2em 2.5em 0px 2em;
+	padding: 0.6em;
+	display:block;
+	font-size:1.6em;
+	width:76%;
+	background: 
+		-webkit-gradient(
+			linear,
+			left top,
+			left 25,
+			from(#FFFFFF),
+			color-stop(4%, #EEEEEE),
+			to(#FFFFFF)
+		);
+	background: 
+		-moz-linear-gradient(
+			top,
+			#FFFFFF,
+			#EEEEEE 0.1em,
+			#FFFFFF 2.5em
+			);
+	-moz-box-shadow: 0em 0em 0.8em #f0f0f0;
+	-webkit-box-shadow: 0em 0em 0.8em #f0f0f0;
+	box-shadow: 0em 0em 0.8em #f0f0f0;
+}
+
+.formulario input[type="submit"] {
+	background: #4d90fe;
+	border: 0.1em solid #ccc;
+	color: #fff;
+	font-family: "Trebuchet MS", "Myriad Pro", sans-serif;
+	font-size: 2.2em;
+	font-weight: bold;
+	padding: 0.5em 0.1em 0.5em 0.1em;
+	text-align: center;
+	cursor:pointer;
+	float: none;
+	width: 79%;
+	margin:1.2em 2em 1em 1.8em;
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	border-radius: 0.4em;
+	-moz-box-shadow: 0em 0em 0.2em #fff inset;
+	-webkit-box-shadow: 0em 0em 0.2em #fff inset;
+	box-shadow: 0em 0em 0.2em #fff inset;
+}
+
+.formulario input[type="submit"]:hover{
+	background: #4787ed;
+	-moz-box-shadow: 0em 0em 0.2em #eaeaea inset;
+	-webkit-box-shadow: 0em 0em 0.2em #eaeaea inset;
+	box-shadow: 0em 0em 0.2em #eaeaea inset;
+	color: #fff;
+}
+
+
+/* Mensjaes */
+.alerta {
+	background: #fff6bf url(Imagenes/alarma.ico) center no-repeat;
+	background-position: 1.5em 50%; /* x-pos y-pos */
+	text-align: left;
+	font-size: 2em;
+	padding: 0.5em 2em 0.5em 4.5em;
+	border-top: 0.2em solid #ffd324;
+	border-bottom: 0.2em solid #ffd324;
+	color:#000000;
+}
+
+.confirmado {
+
+	background: #F7FABE url(Imagenes/confirmado.ico) center no-repeat;
+	background-position: 1.5em 50%; /* x-pos y-pos */
+	text-align: left;
+	font-size: 2em;
+	padding: 0.5em 2em 0.5em 4.5em;
+	border-top: 0.2em solid #DFE786;
+	border-bottom: 0.2em solid #DFE786;
+	color:#000000;
+
+}
+
